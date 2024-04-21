@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    int n, i, m , z;
+    vector <int> res;
+    cout << "enter n:" << endl;
+    cin >> n;
+
+    for (i = n; i > 0; i /= 2)
+    {
+        m = i % 2;
+        res.push_back(m);
+
+    }
+    z = res.size() - 1;
+    for (auto i = z; i >= 0; i--)
+    {
+        cout << res[i];
+    }
+    return 0;
+}
